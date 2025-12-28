@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Undian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 id="judul">Nama Event</h1>
+    <div id="hasil">000</div>
+</div>
+
+<!-- PANEL OPERATOR -->
+<div id="operator">
+    <button onclick="toggleUndi()">UNDI / STOP (SPACE)</button>
+    <button onclick="resetUndian()">RESET</button>
+
+    <div class="log">
+        <h3>Riwayat Pemenang</h3>
+        <ul id="riwayat"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

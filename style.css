@@ -1,0 +1,95 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   SETUP PAGE (MENU AWAL)
+   ========================= */
+.setup-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.setup-container input,
+.setup-container button {
+    width: 420px;
+    padding: 16px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    background: #666;
+    color: white;
+}
+
+.setup-container input::placeholder {
+    color: #ddd;
+}
+
+.setup-container button {
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.setup-container button:hover {
+    background: #777;
+}
+
+/* =========================
+   UNDIAN MAIN VIEW
+   ========================= */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Angka utama */
+#hasil {
+    font-size: 220px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+/* =========================
+   OPERATOR PANEL (TERSEMBUNYI DARI JEMAAT)
+   ========================= */
+#operator {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+#operator button {
+    display: block;
+    margin-bottom: 8px;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.log {
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.log ul {
+    padding-left: 15px;
+    margin: 0;
+}
