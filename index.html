@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Setup Undian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="setup-container">
+    <input 
+        id="eventName" 
+        type="text" 
+        placeholder="Nama event"
+    >
+
+    <input 
+        id="maxNumber" 
+        type="number" 
+        placeholder="Gatcha Nomer (misal dari 1 - 200)"
+    >
+
+    <button onclick="lanjutkan()">Lanjutkan</button>
+</div>
+
+<script>
+function lanjutkan() {
+    const nama = document.getElementById("eventName").value.trim();
+    const jumlah = document.getElementById("maxNumber").value;
+
+    if (!nama || !jumlah || jumlah < 1) {
+        alert("Nama event dan jumlah nomor wajib diisi!");
+        return;
+    }
+
+    localStorage.setItem("eventName", nama);
+    localStorage.setItem("maxNumber", jumlah);
+
+    window.location.href = "undian.html";
+}
+</script>
+
+</body>
+</html>
